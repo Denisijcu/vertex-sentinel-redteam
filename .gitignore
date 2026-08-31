@@ -1,0 +1,24 @@
+# ── V-SRT ──
+.env
+*.env
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.hypothesis/
+.venv/
+venv/
+
+# ML artifacts (Fase 3)
+*.safetensors
+*.pt
+*.ckpt
+models/
+sae_weights/
+
+# Reportes de auditoría (pueden llevar payloads / datos sensibles)
+reports/
+*.jsonl

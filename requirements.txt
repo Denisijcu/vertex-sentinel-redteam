@@ -1,0 +1,22 @@
+# ── Vertex Sentinel Red Team (V-SRT) ── runtime deps ──────────────────
+# Core / runtime
+pydantic>=2.7,<3.0
+pydantic-settings>=2.3,<3.0
+typer>=0.12,<1.0
+rich>=13.7
+
+# Offensive / async I/O (Fase 2)
+httpx>=0.27
+anyio>=4.4
+
+# Testing
+pytest>=8.2
+hypothesis>=6.100
+
+# ── Interpretability (Fase 3) ── instalar aparte, son pesadas ─────────
+# Descomenta cuando montes los SAEs. Las dejo fuera del install base
+# para que el harness defensivo corra sin bajar 2GB de torch.
+# torch>=2.3
+# transformer-lens>=2.0
+# transformers>=4.42
+# sae-lens>=3.0

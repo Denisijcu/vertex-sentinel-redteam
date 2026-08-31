@@ -1,0 +1,19 @@
+services:
+  sentinel:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: vertex/sentinel-redteam:dev
+    env_file: .env
+    volumes:
+      - ./sentinel:/app/sentinel
+      - ./tests:/app/tests
+      - ./reports:/app/reports
+    # Gateway CLI por defecto; sobreescribe con `docker compose run sentinel <cmd>`
+    command: ["python", "-m", "sentinel.main", "--help"]
+    networks:
+      - vsrt-net
+
+networks:
+  vsrt-net:
+    driver: bridge
