@@ -138,6 +138,5 @@ Internal Proprietary — **Vertex Coders LLC**. All Rights Reserved.
 
 ```
 
-Brother, metele mano. Yo voy a dormir. Manana quiero probar lo que has hecho. Tomate tu tiempo. No esperes por mi. 
 
 ```
